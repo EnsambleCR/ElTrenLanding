@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: lato; }
+
+#hero {
+  background-image: url("../Assets/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 30px; }
+  #hero nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: red; }
+    #hero nav .mainNav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0; }
+    #hero nav .login {
+      align-items: center; }
+  #hero .heroContent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    #hero .heroContent .heroText {
+      max-width: 45%;
+      padding: 20px;
+      background-color: #fff; }
+      #hero .heroContent .heroText h1 {
+        font-size: 70px; }
+    #hero .heroContent .heroImg {
+      justify-content: center;
+      align-items: center; }
+      #hero .heroContent .heroImg img {
+        width: 40%;
+        height: auto; }
+  #hero a {
+    color: #fff;
+    text-decoration: none; }
+
+#aboutUs {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  #aboutUs .aboutUsContent {
+    max-width: 45%; }
+
+/*# sourceMappingURL=style.css.map */
