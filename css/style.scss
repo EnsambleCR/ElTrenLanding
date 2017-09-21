@@ -1,67 +1,243 @@
+$golden: #ffc600;
+$white: #fff;
+$darkGray: #292929;
+$lightGray: #f6f6f6;
+$navyBlue: #214A64;
+$skyBlue: #289CB7;
+
+$firstTitle: 4em;
+$secondTitle: 2.5em;
+$thirdTitle: 1.5em;
+
+
+
 *{
   margin: 0;
   padding: 0;
   font-family: lato;
 }
+a{
+  text-decoration: none;
+}
+p{
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
 
+.btn{
+  padding: 10px 15px;
+  background-color: $darkGray;
+  color: $golden;
+  border-radius: 5px;
+  height: auto;
+  font-weight: lighter;
+}
 
 #hero{
-  background-image: url('../Assets/cover.jpg');
+  // background-image: url('../Assets/cover.jpg');
+  background-image: linear-gradient(to top, $skyBlue 0%, #31BAD9 100%);
+  // background-color: $skyBlue;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
   padding: 30px;
+  position: relative;
+  h1{
+    margin-bottom: 20px;
+    line-height: 1em;
+  }
+  p{
+    margin-bottom: 30px;
+  }
   nav{
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    background-color: red;
-    .mainNav{
+    align-items: center;
+    // background-color: red;
+    margin-bottom: 40px;
+    .menu{
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
       align-items: center;
-      margin: 20px 0;
+      justify-content: space-around;
+      margin: 10px 0;
+      a{
+        color: $white;
+        font-weight: lighter;
+        margin: 0 20px;
+      }
     }
     .login{
       align-items: center;
     }
   }
-
   .heroContent{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    color: $white;
     .heroText{
-      max-width: 45%;
-      padding: 20px;
-      background-color: #fff;
+      max-width: 50%;
+      flex: 1;
+      height: auto;
+      padding: 30px 20px;
       h1{
-        font-size: 70px;
+        font-size: $firstTitle;
       }
     }
     .heroImg{
+      display: flex;
+      flex: 1;
       justify-content: center;
       align-items: center;
+      max-width: 40%;
       img{
         width: 40%;
         height: auto;
       }
     }
   }
-  a{
-    color: #fff;
-    text-decoration: none;
-  }
 }
 
+
+
 #aboutUs{
-  padding: 30px;
+  margin: 150px 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   .aboutUsContent{
     max-width: 45%;
+    h2{
+      font-size: $secondTitle;
+      margin-bottom: 20px;
+      line-height: 1em;
+    }
+  }
+}
+
+#services{
+  background-color: $lightGray;
+  padding: 50px;
+  h2{
+    font-size: $thirdTitle;
+  }
+  .servContent{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    .servBox{
+      flex: 1;
+      padding: 50px 30px;
+      background-color: $white;
+      margin: 10px;
+      box-shadow: 5px 3px 5px rgba(0,0,0,0.2);
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      i{
+        margin: 20px 0;
+        color: $skyBlue;
+      }
+    }
+  }
+}
+
+#notifications{
+  background-color: $darkGray;
+  color: $white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .notifMsg{
+    margin: 100px 40px;
+    flex: 1;
+    justify-content: center;
+    h3{
+      font-size: $secondTitle;
+      color: $skyBlue;
+      margin-bottom: 20px;
+      line-height: 1em;
+    }
+    i{
+      color: $golden;
+    }
+  }
+  .notifImg{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    opacity: 0.3;
+  }
+}
+
+#suscribe{
+  background-color: $lightGray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 20px;
+  .suscribeMsg{
+    flex-direction: column;
+  }
+  .suscribeBox{
+    input{
+      padding: 10px 5px;
+      width: 300px;
+      margin: 0 15px;
+    }
+  }
+}
+
+#contactUs{
+  background-color: $skyBlue;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 30px;
+  .trenApp{
+    flex: 1;
+
+  }
+  .menu{
+    flex: 1;
+    text-align: center;
+    a{
+      color: $white;
+    }
+  }
+  .social{
+    flex: 1;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    h4{
+      margin-bottom: 20px;
+    }
+    .socialIcons{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+#credits{
+  background-color: $darkGray;
+  color: $white;
+  padding: 10px 20px;
+  text-align: right;
+  p{
+    margin: 0;
+  }
+  img{
+    width: 5%;
+    height: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  a{
+    color: $white;
   }
 }

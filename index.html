@@ -9,13 +9,11 @@
     <header>
       <section id="hero">
         <nav>
-          <div class="mainNav">
-            <div class="logo">
-              <img type="image/svg+xml" src="assets/train.svg" height="50px" width="50px" alt="Logo">
-              <a href="#">Nosotros</a>
-              <a href="#">Servicios</a>
-              <a href="#">Contáctenos</a>
-            </div>
+          <div class="menu">
+            <img type="image/svg+xml" src="assets/train.svg" height="50px" width="50px" alt="Logo">
+            <a href="#aboutUs">Nosotros</a>
+            <a href="#services">Servicios</a>
+            <a href="#contactUs">Contáctenos</a>
           </div>
           <div class="login">
             <a href="#" class="btn">Iniciar Sesión</a>
@@ -28,7 +26,7 @@
             <a href="#" class="btn">Registrarse</a>
           </div>
           <div class="heroImg">
-            <img src="Assets/iphoneapp.png" alt="iPhone con App">
+            <img src="Assets/iphoneappsm.png" alt="iPhone con App">
           </div>
         </section>
 
@@ -47,30 +45,31 @@
     </section>
     <section id="services">
       <h2>Todos los servicios que tenés con la aplicación El Tren…</h2>
-      <div class="servBox">
-        <img src="" alt="">
-        <h4>Horario y Servicio de Trenes</h4>
-        <p>Con nuestra aplicación el usuario tendrá acceso a visualizar los distintos horarios y rutas de los trenes. Las actualizaciones de los mismos se verán reflejados una vez el Incofer lo haga oficialmente.</p>
-      </div>
-      <div class="servBox">
-        <img src="" alt="">
-        <h4>Ruta del Tren en Tiempo Real</h4>
-        <p>Visualice en tiempo real, la ubicación del tren en la ruta que recorre. De esta forma, los usuarios podrán ver el recorrido y llegar a tiempo para tomarlo en la estación más cercana.</p>
-      </div>
-      <div class="servBox">
-        <img src="" alt="">
-        <h4>Tiquetes e Historial</h4>
-        <p>Adquiera los tiquetes del tren en línea, registrando una tarjeta de débito o crédito. Los mismos serán rebajados automáticamente y podrá mostrarlos al personal del tren al subir. Mantenga un historial completo de las fechas y tiquetes comprados.</p>
+      <div class="servContent">
+        <div class="servBox">
+          <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
+          <h4>Horario y Servicio de Trenes</h4>
+          <p>Con nuestra aplicación el usuario tendrá acceso a visualizar los distintos horarios y rutas de los trenes. Las actualizaciones de los mismos se verán reflejados una vez el Incofer lo haga oficialmente.</p>
+        </div>
+        <div class="servBox">
+          <i class="fa fa-train fa-3x" aria-hidden="true"></i>
+          <h4>Ruta del Tren en Tiempo Real</h4>
+          <p>Visualice en tiempo real, la ubicación del tren en la ruta que recorre. De esta forma, los usuarios podrán ver el recorrido y llegar a tiempo para tomarlo en la estación más cercana.</p>
+        </div>
+        <div class="servBox">
+          <i class="fa fa-ticket fa-3x" aria-hidden="true"></i>
+          <h4>Tiquetes e Historial</h4>
+          <p>Adquiera los tiquetes del tren en línea, registrando una tarjeta de débito o crédito. Los mismos serán rebajados automáticamente y podrá mostrarlos al personal del tren al subir. Mantenga un historial completo de las fechas y tiquetes comprados.</p>
+        </div>
       </div>
     </section>
     <section id="notifications">
       <div class="notifMsg">
-        <img src="" alt="">
-        <h3>Manténgase siempre informado</h3>
+        <h3><i class="fa fa-bell-o" aria-hidden="true"></i> Manténgase siempre informado</h3>
         <p>Nuestro sistema de notificaciones le informará sobre reportes de colisión, derrumbe o atrasos en el servicio para su consideración.  Los usuarios son nuestra mayor preocupación, por ello, mejoramos constantemente.</p>
       </div>
       <div class="notifImg">
-        <img src="" alt="">
+        <img type="image/svg+xml" src="assets/railroad.svg" height="200px" width="200px" alt="Logo">
       </div>
     </section>
     <section id="suscribe">
@@ -80,16 +79,30 @@
       </div>
       <div class="suscribeBox">
         <input type="email" name="" value="" placeholder="Escriba su cuenta de correo...">
-      </div>
-      <div class="suscribeBtn">
-        <a href="#" class="btn">Enviar</a>
+        <a href="#" class="btn">Suscribirme</a>
       </div>
     </section>
-    <footer>
-      <div class="trenApp"></div>
-      <div class="menu"></div>
-      <div class="social"></div>
+    <footer id="contactUs">
+      <div class="trenApp">
+        <h4>Acerca de El Tren</h4>
+        <p>El Tren es una aplicación 100% costarricense, creada para el beneficio de los usuarios del tren. Nuestro objetivo es promover el uso de este servicio de transporte público y hacerlo de manera práctica y segura para el usuario.</p>
+      </div>
+      <div class="menu">
+        <a href="#hero">Ir Arriba</a>
+      </div>
+      <div class="social">
+        <h4>Síganos en</h4>
+        <div class="socialIcons">
+          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
     </footer>
+    <div id="credits">
+      <p>Hecho con <i class="fa fa-heart" aria-hidden="true"></i> por <a href="#"><img type="image/svg+xml" src="assets/Ensamble_white.svg" alt="Logo Ensamble"></a></p>
+
+    </div>
 
     <script src="https://use.fontawesome.com/973ef9f8d7.js"></script>
   </body>
